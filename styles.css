@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    height: 100vh;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#bezier-canvas {
+    border: 1px solid #fff;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#time-slider {
+    width: 80%;
+    margin: 10px;
+}
+
+#time-label {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+#reset-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#bezier-canvas, #time-slider {
+    background-color: #2d2d2d;
+}
