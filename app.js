@@ -2,6 +2,7 @@ const canvas = document.getElementById('bezier-canvas');
 const ctx = canvas.getContext('2d');
 const timeSlider = document.getElementById('time-slider');
 const resetButton = document.getElementById('reset-button');
+const homeButton = document.getElementById('home-button');
 const timeLabel = document.getElementById('time-label');
 
 let points = [];
@@ -128,6 +129,10 @@ timeSlider.addEventListener('input', () => {
 resetButton.addEventListener('click', () => {
     points = [];
     updateCanvas();
+});
+
+homeButton.addEventListener('click', () => {
+    window.location.href = "https://vh8t.github.io/"
 });
 
 window.addEventListener('resize', () => {

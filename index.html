@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Bezier Curve Visualizer</title>
+    <title>Cubic Bezier Curve</title>
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
@@ -12,7 +12,10 @@
     <label for="time-slider"></label><input id="time-slider" max="1" min="0" step="0.01" type="range" value="0">
     <div class="controls">
         <span id="time-label"></span>
-        <button id="reset-button">Reset</button>
+        <div id="buttons">
+            <button id="reset-button">Reset</button>
+            <button id="home-button">Home</button>
+        </div>
     </div>
 </div>
 <script src="app.js"></script>
