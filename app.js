@@ -132,7 +132,7 @@ resetButton.addEventListener('click', () => {
 });
 
 homeButton.addEventListener('click', () => {
-    window.location.href = "https://vh8t.github.io/"
+    window.location.href = "https://vh8t.xyz/"
 });
 
 window.addEventListener('resize', () => {
