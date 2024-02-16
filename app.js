@@ -2,7 +2,6 @@ const canvas = document.getElementById('bezier-canvas');
 const ctx = canvas.getContext('2d');
 const timeSlider = document.getElementById('time-slider');
 const resetButton = document.getElementById('reset-button');
-const homeButton = document.getElementById('home-button');
 const timeLabel = document.getElementById('time-label');
 
 let points = [];
@@ -85,7 +84,7 @@ function calculateRedDotCoordinates(t) {
         y += term * points[i].y;
     }
 
-    return { x, y };
+    return {x, y};
 }
 
 function bc(n, k) {
@@ -129,10 +128,6 @@ timeSlider.addEventListener('input', () => {
 resetButton.addEventListener('click', () => {
     points = [];
     updateCanvas();
-});
-
-homeButton.addEventListener('click', () => {
-    window.location.href = "https://vh8t.xyz/"
 });
 
 window.addEventListener('resize', () => {

@@ -1,23 +1,37 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Cubic Bezier Curve</title>
+
     <link href="styles.css" rel="stylesheet">
+    <link href="../images/favicon.png" rel="icon" type="image/x-icon">
+
+    <title>vh8t - bezier curve visualizer</title>
 </head>
 <body>
+
+<header>
+    <div id="whoami">
+        <h1>Bezier Curve Visualizer</h1>
+        <p>Visualize a Bézier curve. The source code can be found on <a href="https://github.com/vh8t/beziercurve" target="_blank">GitHub</a>.</p>
+    </div>
+</header>
+
 <div class="container">
     <canvas id="bezier-canvas"></canvas>
     <label for="time-slider"></label><input id="time-slider" max="1" min="0" step="0.01" type="range" value="0">
+
     <div class="controls">
         <span id="time-label"></span>
-        <div id="buttons">
+
+        <div>
             <button id="reset-button">Reset</button>
-            <button id="home-button">Home</button>
+            <a href="../"><button>Home</button></a>
         </div>
     </div>
 </div>
+
 <script src="app.js"></script>
+
 </body>
 </html>
